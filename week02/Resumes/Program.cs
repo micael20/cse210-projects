@@ -4,26 +4,29 @@ class Program
 {
     static void Main(string[] args)
     {
-        Job job1 = new Job();
-        job1._company = "Microsoft";
-        job1._jobTitle = "Software Engineer";
-        job1._startYear = 2022;
-        job1._endYear = 2024;
+        Job job = new Job();
+        job._company = "Microsoft";
+        job._jobTitle = "Graphics Designer";
+        job._startYear = 2022;
+        job._endYear = 2024;
 
-        job1.DisplayJobDetails();
+        job.DisplayJobInfo();
 
         Job job2 = new Job();
         job2._company = "Apple";
-        job2._jobTitle = "Web Designer";
+        job2._jobTitle = "Artistist";
         job2._startYear = 2024;
         job2._endYear = 2026;
 
-        job2.DisplayJobDetails();
+        job2.DisplayJobInfo();
 
-        Resume myResume = new Resume();
+        Resume resume = new Resume();
+        resume._name = "Michael Mwidete";
+        resume._jobs.Add(job);
+        resume._jobs.Add(job2);
 
-        myResume._jobs.Add(job1);
-        myResume._jobs.Add(job2);
+        resume.DisplayInfo();
+
 
      
     }   

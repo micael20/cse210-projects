@@ -7,14 +7,14 @@ public class Job
     public int _startYear;
     public int _endYear;
 
-    public void DisplayJobDetails()
+    public Job()
     {
-        Console.WriteLine($"{_company}, {_jobTitle}, {_startYear}-{_endYear}");
+
     }
 
-    internal void Display()
+    public void DisplayJobInfo()
     {
-        throw new NotImplementedException();
+        Console.WriteLine($"{_jobTitle} ({_company}) {_startYear}-{_endYear}");
     }
 }
 
