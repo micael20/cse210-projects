@@ -27,7 +27,23 @@ class Program
 
         resume.DisplayInfo();
 
+        Book book = new Book();
+        book._author = "Paulo Coelho";
+        book._title = "The Alchemist";
+        book._yearPublished = 2030;
 
-     
+        Book book1 = new Book();
+        book1._author = "Elainne Coffman";
+        book1._title = "Someone Like You";
+        book1._yearPublished = 1999;
+
+
+        book1.DisplayBookInfo();
+        book.DisplayBookInfo();
+
+
+
+
+
     }   
 }

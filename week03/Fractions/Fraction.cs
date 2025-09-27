@@ -1,56 +1,44 @@
-public class Fraction 
+public class  Fraction 
 {
     private int _top;
     private int _bottom;
-  
-  // Constructors
-    public Fraction()
-    {
-        _top = 1;
-        _bottom = 1;
+
+    public Fraction (){
+
     }
 
-    public Fraction(int wholeNumber)
-    {
+    public Fraction (int wholeNumber){
         _top = wholeNumber;
         _bottom = 1;
     }
 
-    public Fraction(int top, int bottom)
-    {
+    public Fraction (int top, int bottom){
         _top = top;
         _bottom = bottom;
     }
 
-    //Gettop
-
-    public int GetTop()
-    {
+    public int GetTop(){
         return _top;
     }
 
-    public void SetTop(int top)
-    {
+    public void SetTop(int top){
         _top = top;
-    }       
+    }
 
-    //Getbottom     
-    public int GetBottom()
-    {
+    public int GetBottom (){
         return _bottom;
-    }       
-    public void SetBottom(int bottom)
-    {
+    }
+
+    public void SetBottom(int bottom){
         _bottom = bottom;
     }
-    
-    public string GetFractionString()
-    {
-        return $"{_top}/{_bottom}";
+
+    public string GetFractionString(){
+        string text = $"{_top} / {_bottom}";
+        return text;
     }
 
-    public double GetDecimalValue()
-    {
+    public double GetDecimalValue (){
         return (double)_top / (double)_bottom;
     }
 
