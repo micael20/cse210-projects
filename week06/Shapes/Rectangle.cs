@@ -1,17 +1,17 @@
-public class Rectangle: Shape
+public class Rectangle : Shape
 {
     private double _length;
     private double _width;
 
-    public Rectangle(double length, double width)
+    public Rectangle(string color, double length, double width) : base (color)
     {
         _length = length;
         _width = width;
     }
 
-    public override GetArea()
+    // Notice the use of the override keyword here
+    public override double GetArea()
     {
-        return _length * _width
+        return _length * _width;
     }
 }
-
